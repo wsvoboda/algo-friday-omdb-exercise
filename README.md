@@ -4,7 +4,7 @@
 1. Fork this repo
 2. Run the command: npm i
 #### Note: if your terminal throws errors, delete the ****package-lock.json**** file and rerun : npm i
-4. Debug errors
+3. Debug errors
 
 
 
