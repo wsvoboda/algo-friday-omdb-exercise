@@ -9,7 +9,7 @@
 
 
 ### Easy
-1. Your boss, want to keep a User's name in a global state variable to use in other components. Create a way to change the name of the default User in the sub-heading on the main page by using Redux.
+1. Your project manager, want to keep a User's name in a global state variable to use in other components. Create a way to change the name of the default User in the sub-heading on the main page by using Redux.
 
 ### Medium
 1. Your project manager is planning on adding more pages to the project. He/She/They is asking you to refactor 
