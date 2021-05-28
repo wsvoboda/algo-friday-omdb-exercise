@@ -7,7 +7,7 @@
 
 ### Easy
 1. Create a way to change the name of the developer on the main page by using Redux and defining a global state variable.
-2. Implement an input to be able to alter this global state variable.
+2. Implement an input to be able to alter the name of this global state variable.
 
 ### Medium
 1. Your project manager is planning on adding more pages to the project. He/She/They is asking you to refactor 
