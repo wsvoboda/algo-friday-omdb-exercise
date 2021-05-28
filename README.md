@@ -6,7 +6,7 @@
 3. debug errors
 
 ### Easy
-1. Create a way to change the name of the developer on the main page by using Redux and defining a global state variable.
+1. Create a way to change the name of the greeting search on the main page by using Redux and defining a global state variable.
 2. Implement an input to be able to alter the name of this global state variable.
 
 ### Medium
