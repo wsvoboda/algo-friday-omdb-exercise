@@ -4,13 +4,12 @@
 1. Fork this repo
 2. Run the command: npm i
 #### Note: if your terminal throws errors, delete the ****package-lock.json**** file and rerun : npm i
-3. Debug errors
+3. Debug errors specifically in MoviePage.js and MovieCard.js
 
 
 
 ### Easy
 1. Create a way to change the name of the default User on the main page by using Redux and defining a global state variable.
-2. Implement an input to be able to alter the name of this global state variable.
 
 ### Medium
 1. Your project manager is planning on adding more pages to the project. He/She/They is asking you to refactor 
