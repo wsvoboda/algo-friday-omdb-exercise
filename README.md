@@ -2,8 +2,9 @@
 
 ### Setting Up Project for work
 1. Fork this repo
-2. npm i (if your terminal throws errors, delete the ****package-lock.json**** file and rerun : npm i)
-3. Debug errors
+2. Run the command: npm i
+ ** (if your terminal throws errors, delete the ****package-lock.json**** file and rerun : npm i) **
+4. Debug errors
 
 ### Easy
 1. Create a way to change the name of the default User on the main page by using Redux and defining a global state variable.
