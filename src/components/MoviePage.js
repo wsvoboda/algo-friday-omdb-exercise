@@ -40,7 +40,7 @@ export default function MoviePage() {
   return (
     <div className="main-page-content">
       <h1 className="main-header">Moviflix</h1>
-      <h2 className="sub-header">User, try searching by any Movie Title</h2>
+      <h3 className="sub-header">User, try searching for any Movie</h3>
       <Form className="search-form"
         onChange={(e) => {
           e.preventdefault()
