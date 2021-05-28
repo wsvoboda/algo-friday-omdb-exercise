@@ -3,10 +3,10 @@
 ### Setting Up Project for work
 1. Fork this repo
 2. npm i
-3. debug errors
+3. Debug errors
 
 ### Easy
-1. Create a way to change the name of the greeting search on the main page by using Redux and defining a global state variable.
+1. Create a way to change the name of the default User on the main page by using Redux and defining a global state variable.
 2. Implement an input to be able to alter the name of this global state variable.
 
 ### Medium
