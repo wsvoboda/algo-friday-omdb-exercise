@@ -10,17 +10,25 @@ import {
 import Loader from "./Loader/Loader";
 import MovieCard from "./MovieCard";
 import NoMoviesFound from "./NoMoviesFound";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  changeUsername,
+  changeLoadingStateToFalse,
+  changeLoadingStateToTrue,
+} from "../actions/search-actions";
 
 export default function MoviePage() {
   const [search, setSearch] = useState("");
   const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [username, setUsername] = useState("User");
   const API_KEY = "7bd43d9f";
+  const dispatch = useDispatch();
+
+  const username = useSelector((state) => state.username);
+  const loading = useSelector((state) => state.loading);
 
   useEffect(() => {
     const getDefaultMovies = async () => {
-      setLoading(true);
+      changeLoadingStateToTrue(dispatch);
       const response = await fetch(
         `http://www.omdbapi.com/?apikey=${API_KEY}&s=Dark Knight`,
         {
@@ -29,13 +37,13 @@ export default function MoviePage() {
       );
       const parsedData = await response.json();
       setMovies(parsedData.Search);
-      setLoading(false);
+      changeLoadingStateToFalse(dispatch);
     };
     getDefaultMovies();
   }, []);
 
   const getMovies = async () => {
-    setLoading(true);
+    changeLoadingStateToTrue(dispatch);
     const response = await fetch(
       `http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`,
       {
@@ -48,13 +56,24 @@ export default function MoviePage() {
     } else {
       setMovies([]);
     }
-    setLoading(false);
+    changeLoadingStateToFalse(dispatch);
+  };
+
+  const setNewUsername = (dispatch, e) => {
+    e.preventDefault();
+    changeUsername(dispatch, e.target.value);
   };
 
   return (
     <div className="main-page-content">
       <h1 className="main-header">Moviflix</h1>
-      <h3 className="sub-header">User, try searching for any Movie</h3>
+      <h3 className="sub-header">{username}, try searching for any movie</h3>
+      <input
+        type="text"
+        onChange={(e) => {
+          setNewUsername(dispatch, e);
+        }}
+      />
       <Form
         className="search-form"
         onSubmit={(e) => {
