@@ -1,7 +1,7 @@
 body{
     text-align: center;
     margin: 2em;
-    background-color: #1e5e4a;
+    background-color: #1e5372;
 }
 
 .main-page-content{
@@ -13,6 +13,9 @@ body{
 .main-header{
     margin-bottom: .5em;
     color: #2A1F2D;
+}
+.sub-header{
+    color: #56E39F;
 }
 
 .movie-container{

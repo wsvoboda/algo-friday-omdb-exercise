@@ -22,7 +22,7 @@ export default function MoviePage() {
     };
     getDefaultMovies()
   }, [])
-
+  
   const getMovies = async () => {
     setLoading(true)
     const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`, {
@@ -36,10 +36,11 @@ export default function MoviePage() {
     }
     setLoading(false);
   };
-
+  
   return (
     <div className="main-page-content">
       <h1 className="main-header">Moviflix</h1>
+      <h2 className="sub-header">User, try searching by any Movie Title</h2>
       <Form className="search-form"
         onChange={(e) => {
           e.preventdefault()
@@ -52,7 +53,7 @@ export default function MoviePage() {
             onChange={(e) => setSearch(e.target.value)}
             value={setSearch}
             required
-          />
+            />
           <InputGroup.Append>
             <Button type="" variant="secondary">
               Search
