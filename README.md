@@ -2,8 +2,8 @@
 
 ### Setting Up Project for work
 1. Fork this repo
-2. Run the command: npm i ||
-#### Note: (if your terminal throws errors, delete the ****package-lock.json**** file and rerun : npm i)
+2. Run the command: npm i
+         #### Note: (if your terminal throws errors, delete the ****package-lock.json**** file and rerun : npm i)
 4. Debug errors
 
 
