@@ -3,7 +3,6 @@ import {
   FALSE_STATE,
   TRUE_STATE,
 } from "../action-types/action-types";
-// import newUsername from "../components/MoviePage";
 
 const initialState = {
   username: "Whitney",
