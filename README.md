@@ -2,7 +2,7 @@
 
 ### Setting Up Project for work
 1. Fork this repo
-2. npm i
+2. npm i (if your terminal throws errors, delete the <span style="color:blue">package-lock.json</span>package-lock.json file and rerun : npm i)
 3. Debug errors
 
 ### Easy
